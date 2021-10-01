@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link href="./mysty.css" type="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/bb9893fd41.js" crossorigin="anonymous"></script>
+    <title>mycalculator</title>
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <div class="container-fluid">
+      <a style="letter-spacing: 8px;" class="navbar-brand" href="index.html">Calci</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="col-1"></div>
+      <div class="col-1"></div>
+      <div class="col-1"></div><div class="col-1"></div>
+      
+      <div class="container-fluid ">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+          
+          <li class="nav-item p-1">
+            <a class="btn " aria-current="page" href="./cg.html">CGPA</a>
+          </li>
+          <li class="nav-item p-1">
+            <a class="btn " aria-current="page" href="./eb.html">EB</a>
+          </li>
+          <li class="nav-item p-1">
+            <a class="btn " aria-current="page" href="./ci.html">CI</a>
+          </li>
+        
+        </ul>
+        
+      </div>
+        </div>
+    </div>
+  </nav>
+  <br>
+  <body style="background-color: rgb(255, 255, 255);">
+    <h1 style="text-align: center;">TNEB BILL CALCULATOR</h1>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-3"></div>
+              <div style="margin-top: 15px;background-color: rgb(154, 166, 235);border-radius: 20px;padding: 20px;" class="col-md-6">
+                
+                <form name="frs">
+                   
+                      <div  id="opt" style="display:block; margin-left: 200px;">
+                        <div class="row">
+                        <div class="col-md-4">
+                      <label for="category" style="font-weight:bolder;font-size: larger;" >Category:</label>
+                    </div>
+                    <div class="col-md-4">
+  <select name="category" id="category">
+    <option  value="1">Domestic</option>
+    <option  value="2">Commercial</option>
+  </select>
+</div>
+<div class="col-md-4">
+  <input style="display: block; height: 40px; text-align: center;" type="button" class="btn btn-lg btn-success" id="go" value="next" onclick="funno()">
+</div>
+</div>
+  </div>
+              
+                      <div id="current" class="mb-3" style="display: none;">
+                        <label for="units" style="font-size: 20px;font-weight:1000;" name="units" class="form-label ">Enter units :</label>
+                        <input type="number" class="form-control" id="units">
+                      </div>
+                      
+                      <input style="display: none;" type="button" class="btn btn-lg btn-success" id="last" value="GET" onclick="finalsub()"> 
+                      <div class="mb-3" id="con" style="display: none;">
+                        <label for="bmi" style="font-size: 20px;font-weight:1000;" name="bmi" class="form-label ">Total bill amount:</label>
+                        <input type="text" class="form-control" id="bmi" placeholder="your total amount is ..." readonly>
+                      </div>
+                      <input id="con2" class="btn btn-lg btn-success" style="display: none;" type="reset" value="Reset" />
+               
+                  </form>
+              </div>
+              <div class="col-md-3"></div>
+          </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      
+
+    <script src="jsscr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <footer class="fixed-bottom">
+        <div style="margin-top: 10px;" class="container-fluid bg-info" id="foot">
+          <div class="row">
+            <div class="col-md-12" >
+              <p style="text-align: center;color: white;">Hari V - 19ITR024</p>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </body>
+  </html>

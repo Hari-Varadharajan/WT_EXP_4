@@ -1,0 +1,40 @@
+.entmark ul li{
+    list-style: none;
+    display: inline-block;
+    line-height: 80px;
+    padding-top: 10px;
+}
+#as{
+    width: 320px;
+    height: 150px;
+}
+
+#rt{
+    width: 320px;
+    height: 110px;
+}
+
+#go{
+    width: 20px;
+}
+
+
+
+
+label{
+    position: relative;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    
+    border-radius: 5px;
+   padding:10px;
+}
+
+td
+{
+    padding: 15px;
+}
+
+
+
